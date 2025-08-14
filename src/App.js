@@ -26,10 +26,19 @@ ChartJS.register(
   Legend
 );
 
-function App() {{
+function App() {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  // Define features array
+  const features = [
+    'AI-powered financial insights and predictions',
+    'Interactive dashboard with real-time data',
+    'Full-stack implementation with a focus on backend',
+    'Modern React with Chart.js integration',
+    'Responsive design with Tailwind CSS'
+  ];
 
   useEffect(() => {
     // Simulate data loading
